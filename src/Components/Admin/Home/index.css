@@ -1,0 +1,220 @@
+.image1{
+    filter: drop-shadow(10px 7px 10px white);
+}
+.background{
+    background-image: url('https://t3.ftcdn.net/jpg/03/02/04/06/360_F_302040655_IEH9RyDlu7LL8YCLjgL1IskhrpOlmlSv.jpg');
+    min-height: 100vh;
+    background-size: cover;
+}.font{
+    font-family: 'Helvetica', 'Catamaran', 'Arial', 'sans-serif';
+}
+
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #8c9eff;
+    background-repeat: no-repeat;
+  }
+  
+  .card {
+    z-index: 0;
+    background-color: ;
+    padding-bottom: 20px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    border-radius: 10px;
+  }
+  
+  .top {
+    padding-top: 40px;
+    padding-left: 13% !important;
+    padding-right: 13% !important;
+  }
+  
+  #progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: #455a64;
+    padding-left: 0px;
+    margin-top: 30px;
+  }
+  
+  #progressbar li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+  }
+  
+  #progressbar .step0:before {
+    font-family: FontAwesome;
+    content: "\f10c";
+    color: #fff;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+  }
+  
+  #progressbar li:before {
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    background: #c5cae9;
+    border-radius: 50%;
+    margin: auto;
+    padding: 0px;
+  }
+  
+  #progressbar li:after {
+    content: "";
+    width: 100%;
+    height: 12px;
+    background: #c5cae9;
+    position: absolute;
+    left: 0;
+    top: 16px;
+    z-index: -1;
+  }
+  
+  #progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: -50%;
+  }
+  
+  #progressbar li:nth-child(2):after,
+  #progressbar li:nth-child(3):after {
+    left: -50%;
+  }
+  
+  #progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    left: 50%;
+  }
+  
+  #progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  #progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  #progressbar li.active:before,
+  #progressbar li.active:after {
+    background: #651fff;
+  }
+  
+  #progressbar li.active:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+  }
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+  
+  .icon-content {
+    padding-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .icon-content {
+      width: 50%;
+    }
+  }
+  .bs4-order-tracking {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: #878788;
+    padding-left: 0px;
+    margin-top: 30px
+}
+
+.bs4-order-tracking li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+    color: #878788;
+    text-align: center;
+}
+
+.bs4-order-tracking li:first-child:before {
+    margin-left: 15px !important;
+    padding-left: 11px !important;
+    text-align : left !important;
+}
+
+.bs4-order-tracking li:last-child:before {
+    margin-right: 5px !important;
+    padding-right: 11px !important;
+    text-align : right !important;
+}
+
+.bs4-order-tracking li>div {
+    /*content: "2";*/
+    color: #fff;
+    width: 29px;
+    text-align: center;
+    line-height: 29px;
+    display: block;
+    font-size: 12px;
+    background: #878788;
+    border-radius: 50%;
+    margin: auto
+}
+
+.bs4-order-tracking li:after {
+    content: '';
+    width: 150%;
+    height: 2px;
+    background: #878788;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 15px;
+    z-index: -1
+}
+
+
+.bs4-order-tracking li:first-child:after {
+    left: 50%;
+}
+
+.bs4-order-tracking li:last-child:after {
+    left: 0%!important;
+    width: 0% !important
+}
+.bs4-order-tracking li.active{
+  font-weight: bold;
+  color: #dc3545;
+}
+.bs4-order-tracking li.active>div {
+    background: #dc3545;
+}
+
+.bs4-order-tracking li.active:after {
+    background: #dc3545
+}
+
+.card-timeline {
+    background-color: #fff;
+    z-index: 0
+}
